@@ -1,10 +1,5 @@
-
 class MonthlyPaymentFormula:
     def __init__(self):
-        #self.down_payment = 5000
-        #self.interest_rate = 6.91
-        #self.mortgage_term = 1
-        #self.principal = 10000
         self.down_payment = int(input("How much is the down payment: "))
         self.interest_rate = float(input("Enter the interest_rate: "))
         self.mortgage_term = int(input("Enter the duration of mortgage: "))
@@ -13,14 +8,6 @@ class MonthlyPaymentFormula:
         self.MONTHS_IN_THE_YEAR = 12
     def __repr__(self):
         if self.mortgage_term ==30:
-            return (f"With a {(float(self.down_payment / self.principal)):,.0%} down payment of ${self.
-            down_payment:,.2f}. A ${self.principal:,.2f} monthly mortgage on a {self.mortgage_term}yr."
-            f"fixed with a {self.interest_rate:.2f}% APR is: ${self.c:,.2f} a month.")
-        elif self.mortgage_term ==15:
-            return (f"With a {(float(self.down_payment / self.principal)):,.0%} down payment of ${self.
-            down_payment:,.2f}. A ${self.principal:,.2f} monthly mortgage on a {self.mortgage_term}yr."
-            f"fixed with a {self.interest_rate:.2f}% APR is: ${self.c:,.2f} a month.")
-        elif self.mortgage_term ==10:
             return (f"With a {(float(self.down_payment / self.principal)):,.0%} down payment of ${self.
             down_payment:,.2f}. A ${self.principal:,.2f} monthly mortgage on a {self.mortgage_term}yr."
             f"fixed with a {self.interest_rate:.2f}% APR is: ${self.c:,.2f} a month.")
